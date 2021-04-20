@@ -1,0 +1,13 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": ["node"],
+  "extends": ["eslint:recommended",
+    "standard"],
+  "rules": {
+    "node/exports-style": ["error", "module.exports"],
+    "node/no-unsupported-features": "off"
+  }
+}

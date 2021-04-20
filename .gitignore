@@ -1,0 +1,10 @@
+*~
+*.swp
+.atom-build.yml
+node_modules
+index.es6.js
+index.js
+**/hashIt.js
+**/makeCouchFilter.js
+
+.idea

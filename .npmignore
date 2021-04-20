@@ -1,0 +1,7 @@
+mobdata_grammar.pegjs
+index.es6.js
+**/*.es6.js
+test.js
+.babelrc
+.eslintignore
+.eslintrc.json

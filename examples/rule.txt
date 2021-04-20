@@ -1,0 +1,1 @@
+send "internal_research" to "remote_node_a" if source:company is "google"

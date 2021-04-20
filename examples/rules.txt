@@ -1,0 +1,2 @@
+servers = ["remote_node_a", "remote_node_b", "remote_node_c"],
+send "internal_research" to servers if source:company is "google"

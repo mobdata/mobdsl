@@ -1,0 +1,70 @@
+{
+  "name": "@mobdata/mobdsl",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mobdata/mobdsl/",
+  "contributors": [
+    {
+      "name": "Adam McAree",
+      "email": "arm1686@g.rit.edu"
+    },
+    {
+      "name": "Connor Bulakites",
+      "email": "connor@bulakites.net",
+      "url": "https://www.connorbulakites.com"
+    },
+    {
+      "name": "Marita Carballo",
+      "email": "MaritaRCarballo@gmail.com"
+    },
+    {
+      "name": "Christian Turner",
+      "email": "cturner5@umd.edu"
+    },
+    {
+      "name": "Timothy McKernan",
+      "email": "timbitsandbytes@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run build; ava --verbose test/*",
+    "lint": "eslint lib/hashIt.es6.js lib/makeCouchFilter.es6.js test",
+    "build": "pegjs -o index.es6.js --format 'commonjs' mobdata_grammar.pegjs; babel index.es6.js --out-file index.js; babel lib/makeCouchFilter.es6.js --out-file lib/makeCouchFilter.js; babel lib/hashIt.es6.js --out-file lib/hashIt.js"
+  },
+  "pre-commit": [
+    "build",
+    "lint",
+    "test"
+  ],
+  "devDependencies": {
+    "@ava/babel": "^1.0.1",
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/preset-env": "^7.13.15",
+    "@jacobs.com/classy": "^0.0.0",
+    "ava": "^3.15.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.24.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "pegjs": "^0.10.0",
+    "pre-commit": "^1.2.2",
+    "pretty-js": "^0.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "xxhashjs": "^0.2.2"
+  },
+  "ava": {
+    "babel": {
+      "testOptions": {
+        "babelrc": false
+      }
+    }
+  }
+}
