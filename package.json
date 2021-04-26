@@ -1,30 +1,17 @@
 {
   "name": "@mobdata/mobdsl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
-  "repository": "https://github.com/mobdata/mobdsl/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobdata/mobdsl.git"
+  },
   "contributors": [
-    {
-      "name": "Adam McAree",
-      "email": "arm1686@g.rit.edu"
-    },
-    {
-      "name": "Connor Bulakites",
-      "email": "connor@bulakites.net",
-      "url": "https://www.connorbulakites.com"
-    },
-    {
-      "name": "Marita Carballo",
-      "email": "MaritaRCarballo@gmail.com"
-    },
-    {
-      "name": "Christian Turner",
-      "email": "cturner5@umd.edu"
-    },
-    {
-      "name": "Timothy McKernan",
-      "email": "timbitsandbytes@gmail.com"
-    }
+    "Adam McAree <arm1686@g.rit.edu>",
+    "Connor Bulakites <connor@bulakites.net> (https://www.connorbulakites.com)",
+    "Marita Carballo <MaritaRCarballo@gmail.com>",
+    "Christian Turner <cturner5@umd.edu>",
+    "Timothy McKernan <timbitsandbytes@gmail.com>"
   ],
   "license": "MIT",
   "scripts": {
@@ -66,5 +53,16 @@
         "babelrc": false
       }
     }
-  }
+  },
+  "description": "Parser tool that produces configuration for Apache CouchDb's replication. Uses a simple, straight-forward DSL.",
+  "bugs": {
+    "url": "https://github.com/mobdata/mobdsl/issues"
+  },
+  "homepage": "https://github.com/mobdata/mobdsl#readme",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": ""
 }

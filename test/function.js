@@ -145,7 +145,7 @@ test.before(t => {
     }
   }
   try {
-    fs.symlinkSync('../../@jacobs.com/classy', 'node_modules/views/lib/classyjs')
+    fs.symlinkSync('../../@mobdata/classy', 'node_modules/views/lib/classyjs')
   } catch (err) {
     // ignore "file exists" error
     if (err.errno !== -17) {
